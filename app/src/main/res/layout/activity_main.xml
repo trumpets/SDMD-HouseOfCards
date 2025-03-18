@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/game_name" />
+
+    <TextView
+        android:id="@+id/tv_points_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_header"
+        android:layout_alignParentStart="true"
+        android:text="@string/points" />
+
+    <TextView
+        android:id="@+id/tv_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_points_label"
+        android:layout_alignBottom="@id/tv_points_label"
+        android:layout_marginStart="10dp"
+        android:text="20" />
+
+    <TextView
+        android:id="@+id/tv_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_points_label"
+        android:layout_marginBottom="30dp"
+        android:text="@string/number" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_number_label"
+        android:layout_alignBottom="@id/tv_number_label"
+        android:layout_marginStart="10dp"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/btn_alpha"
+        style="@style/BtnHouse"
+        android:layout_below="@id/tv_number_label"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/top_row_constraint"
+        android:text="@string/alpha" />
+
+    <View
+        android:id="@+id/top_row_constraint"
+        android:layout_alignBottom="@id/btn_alpha"
+        style="@style/ConstraintButtons" />
+
+    <Button
+        android:id="@+id/btn_bravo"
+        style="@style/BtnHouse"
+        android:layout_alignBottom="@id/btn_alpha"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/top_row_constraint"
+        android:text="@string/bravo" />
+
+    <Button
+        android:id="@+id/btn_charlie"
+        style="@style/BtnHouse"
+        android:layout_below="@id/btn_alpha"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/bottom_row_constraint"
+        android:text="@string/charlie" />
+
+    <View
+        android:id="@+id/bottom_row_constraint"
+        android:layout_alignBottom="@id/btn_charlie"
+        style="@style/ConstraintButtons" />
+
+    <Button
+        android:id="@+id/btn_delta"
+        style="@style/BtnHouse"
+        android:layout_alignBottom="@id/btn_charlie"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/bottom_row_constraint"
+        android:text="@string/delta" />
+
+
+</RelativeLayout>
