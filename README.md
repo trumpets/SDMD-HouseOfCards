@@ -41,18 +41,18 @@ GET https://city-201617.appspot.com/_ah/api/highscores/v1/score
 #### Response Example:
 ```json
 {
-    "items": [
-        {
-            "id": "258820003",
-            "score": 150,
-            "websafeKey": "ag1ofmNpdHktMjAxNjE3chALEgdDb250YWN0GIGS9AEM"
-        },
-        {
-            "id": "264810003",
-            "score": 100,
-            "websafeKey": "ag1ofmNpdHktMjAxNjE3chILEglIaWdoc2NvcmUYk9yifgw"
-        }
-    ]
+  "items": [
+    {
+      "id": "258820003",
+      "score": 150,
+      "websafeKey": "ag1ofmNpdHktMjAxNjE3chALEgdDb250YWN0GIGS9AEM"
+    },
+    {
+      "id": "264810003",
+      "score": 100,
+      "websafeKey": "ag1ofmNpdHktMjAxNjE3chILEglIaWdoc2NvcmUYk9yifgw"
+    }
+  ]
 }
 ```
 
@@ -63,15 +63,14 @@ POST https://city-201617.appspot.com/_ah/api/highscores/v1/score
 #### Request Body Example:
 ```json
 {
-    "score": 200
+  "score": 200
 }
 ```
 #### Response Example:
 ```json
 {
-    "id": "242840003",
-    "score": 200,
-    "websafeKey": "ag1ofmNpdHktMjAxNjE3chILEglIaWdoc2NvcmUYw-Plcww"
+  "id": "242840003",
+  "score": 200,
+  "websafeKey": "ag1ofmNpdHktMjAxNjE3chILEglIaWdoc2NvcmUYw-Plcww"
 }
 ```
-
